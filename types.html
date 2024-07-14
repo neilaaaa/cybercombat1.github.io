@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Types of DoS Attacks</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="/CSS/style5.css">
+    </head>
+   <body>
+        <header>
+            <div class="logo">Cyber Combat</div>
+            <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+        </header>
+
+        <div class="wrapper">
+            <nav id="sidebar" class="left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="definition.html">Definition</a></li>
+                    <li><a href="doS.html">DoS: Denial of Service</a></li>
+                    <li><a href="motivations.html">Motivations</a></li>
+                    <li><a href="stages.html">Attack Stages</a></li>
+                    <li><a href="impacts.html">Attack Impacts</a></li>
+                    <li><a href="prevention.html">Prevention and Mitigation</a></li>
+                    <li><a href="tools.html">DoS Tools</a></li>
+                    <li><a href="history.html">History of DoS Attacks</a></li>
+                    <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="main-content">
+                    <h1> Types of DoS Attacks</h1>
+                    <p>There are several types of DoS attacks, each targeting different aspects of a network or system. Here are some common types:</p>
+                    <h3>Volume-Based Attacks:</h3> 
+                    <p>These attacks aim to saturate the bandwidth of the target site. Examples include ICMP floods, UDP floods, and other spoofed packet floods.</p>
+                    <h3>Protocol Attacks:</h3>
+                    <p>These attacks exploit weaknesses in network protocols. Examples include SYN floods, fragmented packet attacks, and Ping of Death.</p>
+                    <h3>Application Layer Attacks:</h3>
+                    <p>These attacks target specific applications and services. Examples include HTTP floods, Slowloris, and DNS query floods.</p>
+                </div>
+           </main>
+        </div>
+        <script>
+            document.querySelector('.toggle-nav').addEventListener('click', function() {
+                const sidebar = document.getElementById('sidebar');
+                const mainContent = document.querySelector('main');
+                if (sidebar.style.left === '0px') {
+                    sidebar.style.left = '-250px';
+                    mainContent.style.marginLeft = '0';
+                } else {
+                    sidebar.style.left = '0px';
+                    mainContent.style.marginLeft = '250px';
+                }
+            });
+        </script>
+    </body>
+</html>

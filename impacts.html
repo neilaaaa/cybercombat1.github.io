@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack Impacts</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Replace with your custom CSS file -->
+    <link rel="stylesheet" href="/CSS/style5.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cyber Combat</div>
+        <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+    </header>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="definition.html">Definition</a></li>
+                <li><a href="doS.html">DoS: Denial of Service</a></li>
+                <li><a href="motivations.html">Motivations</a></li>
+                <li><a href="stages.html">Attack Stages</a></li>
+                <li><a href="prevention.html">Prevention and Mitigation</a></li>
+                <li><a href="tools.html">DoS Tools</a></li>
+                <li><a href="types.html">Types of DoS Attacks</a></li>
+                <li><a href="history.html">History of DoS Attacks</a></li>
+                <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main-content">
+                <h1>Attack Impacts</h1>
+                <p>DoS attacks can have significant impacts on organizations and individuals. Here are some common impacts:</p>
+                <h3>Financial Loss:</h3>
+                <p>Organizations can suffer financial losses due to disrupted services, lost revenue, and the cost of mitigating the attack and repairing the damage.</p>
+                <h3>Reputation Damage:</h3>
+                <p>Being the victim of a DoS attack can damage an organization's reputation, leading to loss of customer trust and business opportunities.</p>
+                <h3>Operational Disruption:</h3>
+                <p>DoS attacks can disrupt normal business operations, causing downtime and affecting productivity and service delivery.</p>
+                <h3>Legal Consequences:</h3>
+                <p>Organizations may face legal consequences if the attack results in a breach of customer data or failure to meet regulatory requirements.</p>
+                <h3>Increased Security Costs:</h3>
+                <p>The need to enhance security measures and recover from an attack can result in increased security costs for the organization.</p>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.querySelector('.toggle-nav').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.querySelector('main');
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-250px';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sidebar.style.left = '0px';
+                mainContent.style.marginLeft = '250px';
+            }
+        });
+    </script>
+</body>
+</html>

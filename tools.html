@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DoS Tools</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="/CSS/style5.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Cyber Combat</div>
+            <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+        </header>
+        <div class="wrapper">
+            <nav id="sidebar" class="left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doS.html">DoS: Denial of Service</a></li>
+                    <li><a href="definition.html">Definition</a></li>
+                    <li><a href="motivations.html">Motivations</a></li>
+                    <li><a href="stages.html">Attack Stages</a></li>
+                    <li><a href="impacts.html">Attack Impacts</a></li>
+                    <li><a href="prevention.html">Prevention and Mitigation</a></li>
+                    <li><a href="types.html">Types of DoS Attacks</a></li>
+                    <li><a href="history.html">History of DoS Attacks</a></li>
+                    <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="main-content">
+                    <h1> DoS Tools</h1>
+                    <p>
+                        A Denial of Service (DoS) tool is a software application or script designed to execute DoS attacks by overwhelming a target system's resources, such as bandwidth, processing power, or memory. Here are some commonly used DoS tools:
+                    </p>
+                    <h3>LOIC (Low Orbit Ion Cannon):</h3> 
+                    <p>
+                        LOIC is an open-source network stress testing and DoS attack tool. It can send a high volume of TCP, UDP, or HTTP requests to a target, often used for simple, straightforward DoS attacks due to its ease of use.
+                    </p>
+                    <h3>HOIC (High Orbit Ion Cannon):</h3>
+                    <p>
+                        HOIC is an advanced version of LOIC, capable of launching more powerful DoS attacks. It supports multiple attack modes and can send HTTP traffic with customizable headers. It's more effective against web servers and applications.
+                    </p>
+                    <h3>Slowloris:</h3>
+                    <p>
+                        Slowloris is a tool that aims to keep many connections to the target web server open and hold them as long as possible. It sends partial HTTP requests, keeping the server tied up with incomplete requests. It's effective in taking down web servers without requiring a high volume of traffic.
+                    </p>
+                    <h3>HULK (HTTP Unbearable Load King):</h3>
+                    <p>
+                        HULK generates unique and obfuscated traffic designed to bypass caching engines and hit the server directly. It sends a large number of HTTP GET requests with random data to exhaust server resources. It primarily targets web servers by overwhelming their request handling capabilities.
+                    </p>
+                    <h3>R-U-Dead-Yet (RUDY):</h3>
+                    <p>
+                        RUDY targets web applications by sending HTTP POST requests with long content length headers. It sends slow POST requests to consume server resources gradually. It's effective against web applications that don't properly handle long-running connections.
+                    </p>
+                    <h3>Xerxes:</h3>
+                    <p>
+                        Xerxes is a DoS tool specifically designed for Linux-based systems. It generates high traffic volumes to exhaust server resources. It's commonly used for educational purposes and demonstrations of DoS vulnerabilities.
+                    </p>
+                </div>
+            </main>
+        </div>
+        <script>
+            document.querySelector('.toggle-nav').addEventListener('click', function() {
+                const sidebar = document.getElementById('sidebar');
+                const mainContent = document.querySelector('main');
+                if (sidebar.style.left === '0px') {
+                    sidebar.style.left = '-250px';
+                    mainContent.style.marginLeft = '0';
+                } else {
+                    sidebar.style.left = '0px';
+                    mainContent.style.marginLeft = '250px';
+                }
+            });
+        </script>
+</body>
+</html>

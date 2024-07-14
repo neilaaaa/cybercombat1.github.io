@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoS: Denial of Service</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Replace with your custom CSS file -->
+    <link rel="stylesheet" href="/CSS/style5.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cyber Combat</div>
+        <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+    </header>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doS.html">DoS: Denial of Service</a></li>
+                <li><a href="definition.html">Definition</a></li>
+                <li><a href="motivations.html">Motivations</a></li>
+                <li><a href="impacts.html">Attack Impacts</a></li>
+                <li><a href="prevention.html">Prevention and Mitigation</a></li>
+                <li><a href="tools.html">DoS Tools</a></li>
+                <li><a href="types.html">Types of DoS Attacks</a></li>
+                <li><a href="history.html">History of DoS Attacks</a></li>
+                <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main-content">
+                <h1>DoS: Denial of Service</h1>
+                <p>
+                    Denial of Service (DoS) attacks are cyber attacks that aim to make a computer or network resource unavailable to its intended users by temporarily or indefinitely disrupting services. These attacks typically target web servers, networks, and services by overwhelming them with a flood of illegitimate requests or traffic.
+                </p>
+                <p>
+                    DoS attacks can be launched using various techniques, including flooding the target with excessive traffic, exploiting vulnerabilities in software, or exhausting system resources. They can have serious consequences, causing downtime, financial losses, and damage to reputation.
+                </p>
+                <h2>Types of DoS Attacks</h2>
+                <ul>
+                    <li>UDP Flood</li>
+                    <li>Syn Flood</li>
+                    <li>HTTP Flood</li>
+                    <li>Slowloris Attack</li>
+                </ul>
+                <h2>Prevention and Mitigation</h2>
+                <ul>
+                    <li>Network monitoring and traffic filtering</li>
+                    <li>Using firewalls and intrusion detection systems</li>
+                    <li>Implementing rate limiting and access controls</li>
+                    <li>Utilizing content delivery networks (CDNs)</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.querySelector('.toggle-nav').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.querySelector('main');
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-250px';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sidebar.style.left = '0px';
+                mainContent.style.marginLeft = '250px';
+            }
+        });
+    </script>
+</body>
+</html>

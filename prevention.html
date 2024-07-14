@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prevention and Mitigation</title>    <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Replace with your custom CSS file -->
+        <link rel="stylesheet" href="/CSS/style5.css">
+    </head>
+
+    <header>
+        <div class="logo">Cyber Combat</div>
+        <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+    </header>
+    <body>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="definition.html">Definition</a></li>
+                    <li><a href="doS.html">DoS: Denial of Service</a></li>
+                    <li><a href="motivations.html">Motivations</a></li>
+                    <li><a href="stages.html">Attack Stages</a></li>
+                    <li><a href="impacts.html">Attack Impacts</a></li>
+                    <li><a href="tools.html">DoS Tools</a></li>
+                    <li><a href="types.html">Types of DoS Attacks</a></li>
+                    <li><a href="history.html">History of DoS Attacks</a></li>
+                    <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="main-content">
+                    <h1> Prevention and Mitigation</h1>
+                    <p>Effective prevention and mitigation of DoS attacks require a combination of strategies and technologies. Here are some key measures:</p>
+                    <h3>Network Security:</h3> 
+                    <p>Implement firewalls, intrusion detection/prevention systems (IDS/IPS), and anti-DDoS services to monitor and block malicious traffic.</p>
+                    <h3>Traffic Analysis:</h3>
+                    <p>Regularly analyze network traffic patterns to identify and respond to unusual spikes or patterns that may indicate an attack.</p>
+                    <h3>Redundancy:</h3>
+                    <p>Set up redundant systems and network paths to ensure availability even if some components are under attack.</p>
+                    <h3>Rate Limiting:</h3>
+                    <p>Implement rate limiting on servers and applications to prevent them from being overwhelmed by excessive requests.</p>
+                    <h3>Software Updates:</h3>
+                    <p>Regularly update software and firmware to patch vulnerabilities that could be exploited by attackers.</p>
+                    <h3>Incident Response Plan:</h3>
+                    <p>Develop and regularly update an incident response plan to quickly and effectively respond to DoS attacks.</p>
+            </div>
+            </main>
+        </div>
+        <script>
+            document.querySelector('.toggle-nav').addEventListener('click', function() {
+                const sidebar = document.getElementById('sidebar');
+                const mainContent = document.querySelector('main');
+                if (sidebar.style.left === '0px') {
+                    sidebar.style.left = '-250px';
+                    mainContent.style.marginLeft = '0';
+                } else {
+                    sidebar.style.left = '0px';
+                    mainContent.style.marginLeft = '250px';
+                }
+            });
+        </script>
+    </body>
+</html>

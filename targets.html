@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attack Targets</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="/CSS/style5.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Cyber Combat</div>
+            <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+        </header>
+
+        <div class="wrapper">
+            <nav id="sidebar" class="left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doS.html">DoS: Denial of Service</a></li>
+                    <li><a href="definition.html">Definition</a></li>
+                    <li><a href="motivations.html">Motivations</a></li>
+                    <li><a href="stages.html">Attack Stages</a></li>
+                    <li><a href="impacts.html">Attack Impacts</a></li>
+                    <li><a href="prevention.html">Prevention and Mitigation</a></li>
+                    <li><a href="tools.html">DoS Tools</a></li>
+                    <li><a href="types.html">Types of DoS Attacks</a></li>
+                    <li><a href="history.html">History of DoS Attacks</a></li>
+                    <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="main-content">
+                    <h1>Attack Targets</h1>
+                    <p>
+                        The targets typically include various network and system resources that can be overwhelmed to disrupt normal operations. Here are some common targets:
+                    </p>
+                    <h2>Web Servers</h2>
+                    <p>HTTP Flood: Overloading a web server with HTTP requests to exhaust its resources, making it unavailable to legitimate users.</p>
+                    
+                    <h2>Application Servers</h2>
+                    <p>Application-level Attacks: Targeting specific applications running on a server to exploit vulnerabilities and cause excessive resource consumption.</p>
+                    
+                    <h2>Network Infrastructure</h2>
+                    <p>
+                        Bandwidth Consumption: Saturating the available network bandwidth with excessive traffic, preventing legitimate traffic from reaching its destination.<br>
+                        Router and Switch Overload: Sending a high volume of packets to routers and switches to exhaust their processing capabilities.
+                    </p>
+                    
+                    <h2>DNS Servers</h2>
+                    <p>DNS Flood: Sending a large number of requests to a DNS server to overwhelm it and prevent it from resolving domain names.</p>
+                </div>
+            </main>
+        </div>
+
+        <script>
+            document.querySelector('.toggle-nav').addEventListener('click', function() {
+                const sidebar = document.getElementById('sidebar');
+                const mainContent = document.querySelector('main');
+                if (sidebar.style.left === '0px') {
+                    sidebar.style.left = '-250px';
+                    mainContent.style.marginLeft = '0';
+                } else {
+                    sidebar.style.left = '0px';
+                    mainContent.style.marginLeft = '250px';
+                }
+            });
+        </script>
+    </body>
+</html>

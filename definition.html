@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Definition of DoS Attacks</title>
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Replace with your custom CSS file -->
+        <link rel="stylesheet" href="/CSS/style5.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Cyber Combat</div>
+            <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+        </header>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doS.html">DoS: Denial of Service</a></li>
+                    <li><a href="targets.html">Attack Targets</a></li>
+                    <li><a href="motivations.html">Motivations</a></li>
+                    <li><a href="stages.html">Attack Stages</a></li>
+                    <li><a href="impacts.html">Attack Impacts</a></li>
+                    <li><a href="prevention.html">Prevention and Mitigation</a></li>
+                    <li><a href="tools.html">DoS Tools</a></li>
+                    <li><a href="types.html">Types of DoS Attacks</a></li>
+                    <li><a href="history.html">History of DoS Attacks</a></li>
+                    <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="main-content">
+                    <h1>Definition of DoS Attacks</h1>
+                    <p>
+                        A Denial of Service (DoS) attack is a malicious attempt to disrupt the normal operations of a targeted server, service, or network by overwhelming it with a flood of illegitimate traffic or requests. The goal of a DoS attack is to make the target unavailable to its legitimate users, causing downtime and potentially financial losses.
+                    </p>
+                    <p>
+                        DoS attacks can vary in complexity and impact, ranging from simple, high-volume flood attacks to more sophisticated attacks that exploit vulnerabilities in software or protocols. These attacks can affect organizations of all sizes and can have severe consequences, including damage to reputation and loss of customer trust.
+                    </p>
+                    <h2>Common Techniques Used in DoS Attacks</h2>
+                    <p>
+                        Some common techniques used in DoS attacks include:
+                        <ul class="type">
+                            <li>UDP Flood: Overwhelming the target with UDP packets.</li>
+                            <li>Syn Flood: Exploiting the TCP handshake process.</li>
+                            <li>HTTP Flood: Sending excessive HTTP requests to exhaust server resources.</li>
+                            <li>Slowloris Attack: Keeping many connections to the target web server open and holding them open as long as possible.</li>
+                        </ul>
+                    </p>
+                    <h2>Impact and Consequences</h2>
+                    <p>
+                        The impact of a successful DoS attack can be significant, including:
+                        <ul class="type">
+                            <li>Downtime and service disruption.</li>
+                            <li>Financial losses due to disrupted operations.</li>
+                            <li>Reputational damage.</li>
+                            <li>Legal and regulatory consequences.</li>
+                        </ul>
+                    </p>
+                    <h2>Prevention and Mitigation</h2>
+                    <p>
+                        Organizations can mitigate the risk of DoS attacks by implementing proactive measures such as:
+                        <ul class="type">
+                            <li>Network traffic monitoring and analysis.</li>
+                            <li>Implementing firewalls and intrusion prevention systems.</li>
+                            <li>Deploying content delivery networks (CDNs) to distribute traffic.</li>
+                            <li>Using rate limiting and access control mechanisms.</li>
+                        </ul>
+                    </p>
+                </div>
+            </main>
+        </div>
+        <script>
+            document.querySelector('.toggle-nav').addEventListener('click', function() {
+                const sidebar = document.getElementById('sidebar');
+                const mainContent = document.querySelector('main');
+                if (sidebar.style.left === '0px') {
+                    sidebar.style.left = '-250px';
+                    mainContent.style.marginLeft = '0';
+                } else {
+                    sidebar.style.left = '0px';
+                    mainContent.style.marginLeft = '250px';
+                }
+            });
+        </script>
+    </body>
+</html>

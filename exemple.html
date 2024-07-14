@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Examples of Previous DoS Attacks</title>
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Replace with your custom CSS file -->
+        <link rel="stylesheet" href="/CSS/style5.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Cyber Combat</div>
+            <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+        </header>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doS.html">DoS: Denial of Service</a></li>
+                    <li><a href="targets.html">Attack Targets</a></li>
+                    <li><a href="motivations.html">Motivations</a></li>
+                    <li><a href="stages.html">Attack Stages</a></li>
+                    <li><a href="impacts.html">Attack Impacts</a></li>
+                    <li><a href="prevention.html">Prevention and Mitigation</a></li>
+                    <li><a href="tools.html">DoS Tools</a></li>
+                    <li><a href="types.html">Types of DoS Attacks</a></li>
+                    <li><a href="history.html">History of DoS Attacks</a></li>
+                    <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="main-content">
+                    <h1>Examples of Previous DoS Attacks</h1>
+                    <h3>
+                      Morris Worm (1988)
+                    </h3>
+                    <p>
+                      <ul class="type">
+                        <li>  Description: One of the earliest examples of a denial of service, though not a traditional DoS attack. </li>
+                        <li>Impact: Infected approximately 10% of the internet at the time, causing widespread disruptions. </li>
+                        <li>Method: Exploited vulnerabilities in Unix systems to spread and overload systems. </li>
+                      </ul>
+                    </p>
+                    <h3>SYN Flood Attack on Panix (1996)</h3>
+                    <p>
+                        <ul class="type">
+                            <li>Description: Panix, an ISP, was targeted by a SYN flood attack.</li>
+                            <li>Impact: Overwhelmed Panix’s servers with fake SYN requests, causing a 36-hour downtime.</li>
+                            <li>Method: Sent numerous SYN requests to initiate connections without completing them, exhausting server resources.</li>
+                        </ul>
+                    </p>
+                    <h3>MafiaBoy Attacks (2000)</h3>
+                    <p>
+                        <ul class="type">
+                            <li>Description: Michael "Mafiaboy" Calce, a teenager, launched DDoS attacks against major websites.</li>
+                            <li>Impact: Temporarily shut down websites like Yahoo!, Amazon, eBay, and CNN, causing significant disruption.</li>
+                            <li>Method: Used a tool called TFN2 to coordinate attacks using previously infected computers to generate massive amounts of traffic.</li>
+                        </ul>
+                    </p>
+                    <h3>GitHub DoS Attack (2018)</h3>
+                    <p>
+                        <ul class="type">
+                            <li>Description: GitHub faced one of the largest recorded DDoS attacks.</li>
+                            <li>Impact: Traffic peaked at 1.35 Tbps, causing temporary service disruptions</li>
+                            <li>Method: Used a memcached amplification technique to generate a large volume of traffic.</li>
+                        </ul>
+                    </p>
+                </div>
+            </main>
+        </div>
+        <script>
+            document.querySelector('.toggle-nav').addEventListener('click', function() {
+                const sidebar = document.getElementById('sidebar');
+                const mainContent = document.querySelector('main');
+                if (sidebar.style.left === '0px') {
+                    sidebar.style.left = '-250px';
+                    mainContent.style.marginLeft = '0';
+                } else {
+                    sidebar.style.left = '0px';
+                    mainContent.style.marginLeft = '250px';
+                }
+            });
+        </script>
+    </body>
+</html>

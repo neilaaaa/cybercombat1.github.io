@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Combat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    
+
+</head>
+<body>
+    <header>
+        <div class="logo">Cyber Combat</div>
+        <button class="toggle-nav"><i class="fas fa-bars"></i></button> <!-- Button to toggle sidebar -->
+    </header>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <ul>
+                <li><a href="doS.html">DoS: Denial of Service</a></li>
+                <li><a href="definition.html">Definition</a></li>
+                <li><a href="targets.html">Attack Targets</a></li>
+                <li><a href="motivations.html">Motivations</a></li>
+                <li><a href="stages.html">Attack Stages</a></li>
+                <li><a href="impacts.html">Attack Impacts</a></li>
+                <li><a href="prevention.html">Prevention and Mitigation</a></li>
+                <li><a href="tools.html">DoS Tools</a></li>
+                <li><a href="types.html">Types of DoS Attacks</a></li>
+                <li><a href="history.html">History of DoS Attacks</a></li>
+                <li><a href="examples.html">Examples of Previous DoS Attacks</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main-content">
+                <div class="icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h1>CYBER HUNT</h1>
+                <p>DoS Attack Simulation on VirtualBox Proposing Defense Methods</p>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.querySelector('.toggle-nav').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.querySelector('main');
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-250px';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sidebar.style.left = '0px';
+                mainContent.style.marginLeft = '250px';
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoS Attack Simulation</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+    <body id="body-index">
+        <div class="image-container">
+            <img src="/IMAGES/image.png" alt="Background Image">
+        </div>
+        
+        <header>
+            <h1>DoS Attack Simulation on VirtualBox Proposing Defense Methods</h1>
+        </header>
+
+        <nav id="index">
+            <ul>
+                <li><a href="pages/doS.html">DoS: Denial of Service</a></li>
+                <li><a href="pages/definition.html">Definition</a></li>
+                <li><a href="pages/targets.html">Attack Targets</a></li>
+                <li><a href="pages/motivations.html">Motivations</a></li>
+                <li><a href="pages/stages.html">Attack Stages</a></li>
+                <li><a href="pages/impacts.html">Attack Impacts</a></li>
+                <li><a href="pages/prevention.html">Prevention and Mitigation</a></li>
+                <li><a href="pages/tools.html">DoS Tools</a></li>
+                <li><a href="pages/types.html">Types of DoS Attacks</a></li>
+                <li><a href="pages/history.html">History of DoS Attacks</a></li>
+                <li><a href="pages/examples.html">Examples of Previous DoS Attacks</a></li>
+                <li><a href="pages/conclusion.html">Conclusion</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2024 DoS Attack Simulation Project</p>
+        </footer>
+
+    </body>
+</html> -->
